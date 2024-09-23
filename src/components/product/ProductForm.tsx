@@ -28,7 +28,7 @@ export function ProductForm() {
         required={true}
       />
       <label htmlFor="category">Category</label>
-      <CategoryFilter category={category} setCategory={setCategory} />
+      <CategoryFilter defaultCategory="select" setCategory={setCategory} />
     </form>
   );
 }

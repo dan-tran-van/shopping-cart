@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Category } from "../../types/category.type";
 import { Option } from "./Option";
 
-export function CategoryFilter({ category, setCategory }) {
+export function CategoryFilter({ defaultCategory, setCategory }) {
   const [categories, setCategories] = useState<Category[]>([]);
 
   const [status, setStatus] = useState<"pending" | "success" | "error">(
@@ -43,7 +43,7 @@ export function CategoryFilter({ category, setCategory }) {
             name="category"
             id="category"
           >
-            <option value={category}>{category}</option>
+            <option value={defaultCategory}>{defaultCategory}</option>
             {categories.map((category) => (
               <Option key={category} value={category}></Option>
             ))}

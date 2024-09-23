@@ -58,7 +58,7 @@ export function Home() {
           <label htmlFor="category">
             Category
             <CategoryFilter
-              category={category}
+              defaultCategory="All"
               setCategory={setCategory}
             ></CategoryFilter>
           </label>
