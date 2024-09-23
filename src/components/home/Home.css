@@ -1,0 +1,38 @@
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+
+.product-item {
+  inline-size: 200px;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.product-image img {
+  inline-size: 200px;
+  aspect-ratio: 1 /1;
+  object-fit: contain;
+}
+
+.product-item:hover {
+  background-color: rgb(231, 231, 231);
+  cursor: pointer;
+}
+
+.product-title {
+  font-size: 12px;
+  font-weight: 400;
+  color: gray;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+ul {
+  padding: 0px;
+}

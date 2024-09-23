@@ -1,0 +1,9 @@
+#action {
+  position: fixed;
+  right: 0px;
+  inline-size: 280px;
+  block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  top: 0px;
+}
